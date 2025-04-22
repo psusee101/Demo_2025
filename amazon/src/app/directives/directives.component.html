@@ -1,0 +1,22 @@
+<h1> Structural Directives</h1>
+
+<div *ngIf="showSelection">
+     I will be shown based on the showSelection property in the component.
+</div>
+
+<p *ngIf="showText">This text is conditionally shown!</p>
+<button (click)="toggleText()">Toggle Text</button>
+
+<ul>
+     <li *ngFor="let item of items"> {{item}} </li>
+</ul>
+
+<h1> Attribute Directives </h1>
+
+<p [ngClass]="{'highlight':isHighlighted}"> This Text will be highlighted</p>
+<button (click)="toggleHighlight()">style directive</button>
+
+<p [ngStyle]="{'color': textColor, 'font-weight': 'bold'}">
+     This text has dynamic styling
+   </p>
+   

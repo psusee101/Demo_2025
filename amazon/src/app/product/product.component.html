@@ -1,0 +1,16 @@
+<!-- Event Binding -->
+<h2>{{ message }}</h2>
+<button (click)="showMessage()">Click Me</button>
+
+<!-- String interpolation -->
+<h1>{{title}}</h1>
+<p>Product Id : {{pid}}</p>
+<p>Product Name : {{pname}}</p>
+<p>Price : {{price}}</p>
+
+<!-- Property Binding -->
+<img [src]="imgURl" alt="image is not loading"> <hr/>
+
+<!-- Two-way binding -->
+<input [(ngModel)]="userName" placeholder="Enter the userName">
+<p>UserName : {{ userName }}</p>
